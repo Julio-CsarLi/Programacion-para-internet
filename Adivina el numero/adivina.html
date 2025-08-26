@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>¡Adivina el Número!</h1>
+    </div>
+
+    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/A_first_splash" class="top-right-link">
+        Tutorial adivina el número
+    </a>
+
+    <div class="game-container">
+        <p id="attemptsLeft">Intentos restantes: 10</p>
+        
+        <div class="guess-area">
+            <input type="number" id="guessInput" placeholder="Tu número">
+            <button id="submitBtn">Adivinar</button>
+        </div>
+
+        <div id="feedback"></div>
+        
+        <p>Números ya ingresados:</p>
+        <ul id="guessesList"></ul>
+
+        <button id="playAgainBtn">Jugar otra vez</button>
+    </div>
+
+    <div class="footer-text">
+        <p>Instrucciones<br>
+            Ingresa hasta 10 números para adivinar el número que el juego eligio al azar<br>
+            ¡¡¡¡SUERTE!!!!</p>
+    </div>
+
+    <!-- Enlace al archivo JavaScript para la lógica del juego -->
+    <script src="juego.js"></script>
+
+</body>
+</html>
