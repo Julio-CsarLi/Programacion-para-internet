@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phaser 3</title>
+
+  <h1>Mi primer juego</h1>
+  <style>
+    h1 {
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: #FF8C00;
+      color: #FFFAF0;
+      border-radius: 8px;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #00008B;
+      color: #FFFAF0;
+      font-family: Arial, sans-serif;
+    }
+    #game {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    canvas {
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.35);
+    }
+    #descripcion {
+      margin-top: 15px;
+      margin: 20px;
+      padding: 20px;
+      font-size: 25px;
+      text-align: center;
+      background-color: #FF8C00;
+      color:#FFFAF0;
+      border-radius: 8px;
+    }
+    #tutorial {
+      text-align: center;
+      margin: 20px;
+      padding: 10px;
+    }
+    #tutorial a {
+      color: #FF8C00;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #tutorial a:hover {
+      text-decoration: underline;
+      color: #48ff00;
+    }
+  </style>
+
+  <!-- Phaser 3 desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+
+  <!-- Texto debajo del canvas -->
+  <div id="descripcion">
+    Bienvenido<br>
+    Usa las teclas de flecha para mover al personaje.
+  </div>
+
+  <!-- Link al tutorial -->
+  <div id="tutorial">
+    <a href="https://phaser.io/tutorials/making-your-first-phaser-3-game/" target="_blank">
+      Ver Tutorial Oficial de Phaser 3
+    </a>
+  </div>
+
+  <!-- Código del juego -->
+  <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
